@@ -286,6 +286,7 @@ h2{font-size: 2rem;}
 
 .footer-nav{
     width: 33%;
+    padding-left: 7rem;
 }
 
 .social-media{
@@ -315,7 +316,7 @@ a{
 .socials{
     display: flex;
     flex-direction: row;
-        align-items: flex-end;
+    justify-content: center;
     gap: 1.5rem;
 }
 
@@ -328,4 +329,7 @@ a{
 
 .legal{
     font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
