@@ -88,7 +88,7 @@ p, button{font-family: 'Open Sans';}
 .fw-600{font-weight: 600;}
 .fw-700{font-weight: 700;}
 
-/* General */
+/* ---------- General ---------- */
 
 .header-container{
     padding: 3rem 5rem 0 5rem;
@@ -126,7 +126,7 @@ main p{
     padding-top: 1rem;
 }
 
-/* Header */
+/* ---------- Header ---------- */
 
 .logo-section{
     display: flex;
@@ -179,7 +179,7 @@ main p{
     width: 53%;
 }
 
-/* grid section */
+/* ---------- main grid section ---------- */
 
 .main-info-grid{
     display: grid;
@@ -196,7 +196,7 @@ main p{
     padding: 5rem 1.25rem;
 }
 
-/* footer */
+/* ---------- footer ---------- */
 
 footer{
     background-color: var(--n-veryDarkCyan);
@@ -302,6 +302,10 @@ h2{font-size: 2rem;}
     margin-top: -1rem;
 }
 
+.footer-nav a:hover{
+    text-decoration: underline;
+}
+
 li{
     list-style: none;
     width: 50%;
@@ -320,11 +324,18 @@ a{
     gap: 1.5rem;
 }
 
-.socials img{
+.socials i:hover{
+    color: var(--p-pink);
+    cursor: pointer;
+}
+
+.socials i{
     height: 1.25rem;
     width: auto;
-    outline: solid white 1px;
-    outline-offset: 0.25rem;
+}
+
+.social-icon:hover{
+    fill: var(--p-pink);
 }
 
 .legal{
@@ -332,4 +343,179 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+/* ---------- Button Hover ---------- */
+
+.btn-one:hover{
+    color: var(--n-grayishBlue);
+    cursor: pointer;
+}
+
+.btn-two:hover, .btn-three:hover{
+    background-color: hsla(321, 100%, 80%, 1);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px){
+
+    /* ---------- Header Mobile --------- */
+
+    .header-container{
+        padding: 1rem 1rem;
+        background-image: url(./img/bg-hero-mobile.svg);
+    }
+
+    .logo-section{
+        padding-bottom: 5rem;
+    }
+
+    .logo-section img{
+        height: 1rem;
+        width: auto;
+    }
+
+    .btn-one{
+        padding: 0.25rem 1.5rem 0.25rem 1.5rem;
+        font-size: 0.6125rem;
+    }
+
+    .header-section{
+        padding: 0rem 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-info{
+        width: 100%;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-info h1, p{
+        text-align: center;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .header-info p{
+        font-size: 1rem;
+        padding: 0 2%;
+    }
+
+    .btn-two{
+        width: 80%;
+        padding: 0.625rem 0;
+    }
+    
+    .header-graphic{
+        width: 100%;
+        padding-top: 3.5rem;
+    }
+
+    /* ---------- Main Grid Mobile ---------- */
+
+    main{
+        padding: 3.75rem 1.25rem 0 1.25rem;
+        row-gap: 1.5rem;
+    }
+
+    .main-info-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .info-text{
+        text-align: center;
+        padding: 0rem 2.5rem 2rem 2.5rem;
+    }
+
+    .grid-card{
+        padding: 2rem 2.5rem 0rem 2.5rem;
+    }
+
+    h3{
+        font-size: 1.25rem;
+    }
+
+    .info-text p{
+        font-size: 0.825rem;
+    }
+
+    .info-one{
+        grid-row: 2;
+    }
+
+    .info-three{
+        grid-row:6;
+    }
+
+    /* ---------- Footer ---------- */
+
+    footer{
+        padding: 8.25rem 1rem 3rem 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-top{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 2.5rem 0.75rem 2.5rem 0.75rem;
+    }
+
+    .btn-three{
+        padding-top: 1.5rem;
+        font-size: 0.625rem;
+    }
+
+    h2{
+        font-size: 1.125rem;
+    }
+
+    .btn-three{
+        padding: 0.75rem 3rem;
+    }
+
+    .footer-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info{
+        width: 100%;
+        font-size: .9rem;
+    }
+
+    .location p{
+        text-align: left;
+    }
+
+    .footer-nav{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 2.5rem;
+        font-size: .9rem;
+    }
+
+    ul{
+        padding-left: 0;
+    }
+
+    li{
+        float: none;
+        width: 100%;
+    }
+
+    .social-media{
+        width: 100%;
+    }
+
+    .legal{
+        justify-content: center;
+        padding-top: 1.5rem;
+    }
 }
